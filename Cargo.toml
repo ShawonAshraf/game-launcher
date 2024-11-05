@@ -3,4 +3,8 @@ name = "game-launcher"
 version = "0.1.0"
 edition = "2021"
 
+[binary]
+doctest = false
+
 [dependencies]
+sqlite = "0.36.1"
