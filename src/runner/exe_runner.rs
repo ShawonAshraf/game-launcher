@@ -64,9 +64,7 @@ impl ExeRunner {
     pub fn run_exe(&self) -> u32 {
         println!("Running exe: {}", &self.current_exe);
 
-        let status = Command::new(&self.current_exe)
-            .spawn()
-            .expect("The executable should run.");
+        let status = Command::new(&self.current_exe).spawn().expect("The executable should run.");
 
         status.id()
     }
