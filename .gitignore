@@ -1,4 +1,4 @@
-/target
+target/
 game.db
 test_game.db
 .idea/
